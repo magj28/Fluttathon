@@ -1,10 +1,11 @@
 class AboutPlace {
-  String image, name, distance;
+  String category, image, name, distance;
   double initialRating;
   Function onTapPlaceCard;
 
   AboutPlace(
-      {this.image,
+      {this.category,
+        this.image,
       this.name,
       this.distance,
       this.initialRating,

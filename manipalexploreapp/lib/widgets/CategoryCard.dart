@@ -24,11 +24,11 @@ class CategoryCard extends StatelessWidget {
                 child: Opacity(
                     opacity: 0.2,
                     child: Container(
-                      height: _height / 7,
+                      height: _height / 4,
                       padding: EdgeInsets.all(10.0),
                       width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(40.0),
+                        borderRadius: BorderRadius.circular(20.0),
                         color: Color(0xff141414),
                         image: new DecorationImage(
                           image: new AssetImage(image),

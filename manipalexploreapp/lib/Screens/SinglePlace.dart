@@ -79,7 +79,7 @@ class _SinglePlaceState extends State<SinglePlace> {
                     dotColor: Colors.blue[900],
                     dotBgColor: Colors.grey[100].withOpacity(0.01),
                     indicatorBgPadding: 10.0,
-                    autoplayDuration: Duration(seconds: 5),
+                    autoplayDuration: Duration(seconds: 3),
                     dotIncreasedColor: Colors.cyanAccent,
                   ),
                 ),

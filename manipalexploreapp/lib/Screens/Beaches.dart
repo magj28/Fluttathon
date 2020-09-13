@@ -17,6 +17,11 @@ class _BeachesState extends State<Beaches> {
       Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => KaupBeach()));
+    }, initialRating:4.75,
+    );
+    AboutPlace _place2= new AboutPlace(
+      image: "images/Beaches/Kapu/Kapu2.jpg", name: "Malpe Beach", distance: "5 km", onTapPlaceCard: (){
+
     }, initialRating: 3.5,
     );
     return Scaffold(
@@ -28,6 +33,7 @@ class _BeachesState extends State<Beaches> {
       body: ListView(
         children: [
           PlaceCard(image: _place.image, name: _place.name, distance: _place.distance, onTap: _place.onTapPlaceCard, initialRating: _place.initialRating, ),
+          PlaceCard(image: _place2.image, name: _place2.name, distance: _place2.distance, initialRating: _place2.initialRating, ),
         ],
       ),
     );

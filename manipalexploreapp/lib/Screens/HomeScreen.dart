@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:manipalexploreapp/Screens/Beaches.dart';
+import 'package:manipalexploreapp/Screens/Waterfalls.dart';
 import 'package:manipalexploreapp/widgets/CategoryCard.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -121,28 +122,28 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           Column(
             children: <Widget>[
-              SizedBox(
-                height: _height / 3,
-                width: _width,
-                child: Carousel(
-                  images: [
-                    AssetImage("images/Carousel/Scenery.jpeg"),
-                    AssetImage("images/Carousel/Malpebeach.jpg"),
-                    AssetImage("images/Carousel/Arbifalls.jpg"),
-                    AssetImage("images/Carousel/EggFactory.jpg"),
-                    AssetImage("images/Carousel/TC_1.jpeg"),
-                    AssetImage("images/Carousel/DeeTee-Manipal.jpg"),
-                    AssetImage("images/Carousel/StudentPlaza2.jpeg"),
-                  ],
-                  dotSize: 5.0,
-                  dotSpacing: 15.0,
-                  dotColor: Colors.white,
-                  dotBgColor: Colors.grey[100].withOpacity(0.01),
-                  indicatorBgPadding: 10.0,
-                  autoplayDuration: Duration(seconds: 5),
-                  dotIncreasedColor: Colors.white,
-                ),
-              ),
+              // SizedBox(
+              //   height: _height / 3,
+              //   width: _width,
+              //   child: Carousel(
+              //     images: [
+              //       AssetImage("images/Carousel/Scenery.jpeg"),
+              //       AssetImage("images/Carousel/Malpebeach.jpg"),
+              //       AssetImage("images/Carousel/Arbifalls.jpg"),
+              //       AssetImage("images/Carousel/EggFactory.jpg"),
+              //       AssetImage("images/Carousel/TC_1.jpeg"),
+              //       AssetImage("images/Carousel/DeeTee-Manipal.jpg"),
+              //       AssetImage("images/Carousel/StudentPlaza2.jpeg"),
+              //     ],
+              //     dotSize: 5.0,
+              //     dotSpacing: 15.0,
+              //     dotColor: Colors.white,
+              //     dotBgColor: Colors.grey[100].withOpacity(0.01),
+              //     indicatorBgPadding: 10.0,
+              //     autoplayDuration: Duration(seconds: 5),
+              //     dotIncreasedColor: Colors.white,
+              //   ),
+              // ),
               CategoryCard(
                   image: "images/CircleAvatar/images.jpg",
                   category: "Beaches",
@@ -153,7 +154,10 @@ class _HomeScreenState extends State<HomeScreen> {
               CategoryCard(
                   image: "images/CircleAvatar/Falls.jpg",
                   category: "Waterfalls",
-                  onTap: () {}),
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Waterfalls()));
+                  }),
               CategoryCard(
                   image: "images/CircleAvatar/Food.jpg",
                   category: "Restaurants",
