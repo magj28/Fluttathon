@@ -26,7 +26,7 @@ class RatingKaup extends StatelessWidget {
                           builder: (context) => AddRating()));
                 },
                 child: Text(
-                  "Add a rating", style: TextStyle(color: Colors.white, fontSize: 18,) , textAlign: TextAlign.right,
+                  "Add a rating!", style: TextStyle(color: Colors.blue, fontSize: 18,) , textAlign: TextAlign.center,
                 )),
           ),
           RatingCard('Anonymous', 3.5, 'Amazing'),

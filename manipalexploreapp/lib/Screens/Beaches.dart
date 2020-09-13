@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:manipalexploreapp/Screens/KapuBeach.dart';
+import 'package:manipalexploreapp/model/AboutPlace.dart';
 import 'package:manipalexploreapp/widgets/PlaceCard.dart';
 
 class Beaches extends StatefulWidget {
@@ -11,7 +12,13 @@ class Beaches extends StatefulWidget {
 class _BeachesState extends State<Beaches> {
   @override
   Widget build(BuildContext context) {
-
+    AboutPlace _place= new AboutPlace(
+      image: "images/Beaches/Kapu/Kapu3.jpg", name: "Kaup Beach", distance: "7.4 km", onTapPlaceCard: (){
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => KaupBeach()));
+    }, initialRating: 3.5,
+    );
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black,
@@ -20,11 +27,7 @@ class _BeachesState extends State<Beaches> {
       backgroundColor: Colors.black,
       body: ListView(
         children: [
-          PlaceCard(image: "images/Beaches/Kapu/Kapu3.jpg", name: "Kaup Beach", distance: "7.4 km", onTap: (){
-            Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => KaupBeach()));
-          }, initialRating: 3.5,),
+          PlaceCard(image: _place.image, name: _place.name, distance: _place.distance, onTap: _place.onTapPlaceCard, initialRating: _place.initialRating, ),
         ],
       ),
     );

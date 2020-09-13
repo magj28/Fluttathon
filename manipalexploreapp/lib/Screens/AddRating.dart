@@ -23,6 +23,7 @@ class AddRating extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 RatingBar(
@@ -41,6 +42,26 @@ class AddRating extends StatelessWidget {
 
                   },
                 ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8.0),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey),
+                      ),
+                      //hintText: Text("Enter experience", style: TextStyle(Colors.blueGrey),),
+                    ),
+                    maxLines: 3,
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.bottomRight,
+                  child: FlatButton(
+                    child: Text("SUBMIT"),
+                    color: Colors.blue,
+                    textColor: Colors.white, onPressed: () {  },
+                  ),
+                )
               ],
             ),
           ),

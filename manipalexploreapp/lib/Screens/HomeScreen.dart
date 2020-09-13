@@ -67,12 +67,12 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             UserAccountsDrawerHeader(
               accountName: Text('Hemangi Jain'),
-              accountEmail: Text("fuyguh@gu"),
+              accountEmail: Text("hemangijain.28@gmail.com"),
               currentAccountPicture: CircleAvatar(
-                backgroundColor: Colors.orange,
+                backgroundColor: Colors.cyanAccent,
                 child: Text(
                   'HJ',
-                  style: TextStyle(color: Colors.black),
+                  style: TextStyle(color: Colors.black, fontSize: 20.0),
                 ),
               ),
               decoration: BoxDecoration(color: Colors.black),

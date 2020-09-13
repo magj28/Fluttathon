@@ -65,20 +65,23 @@ class _SinglePlaceState extends State<SinglePlace> {
               SizedBox(
                 height: _height / 3,
                 width: _width,
-                child: Carousel(
-                  images: [
-                    AssetImage(widget.imageurl1),
-                    AssetImage(widget.imageurl2),
-                    AssetImage(widget.imageurl3),
-                  ],
-                  //autoplay: false,
-                  dotSize: 5.0,
-                  dotSpacing: 15.0,
-                  dotColor: Colors.blue[900],
-                  dotBgColor: Colors.grey[100].withOpacity(0.01),
-                  indicatorBgPadding: 10.0,
-                  autoplayDuration: Duration(seconds: 5),
-                  dotIncreasedColor: Colors.cyanAccent,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical:8.0),
+                  child: Carousel(
+                    images: [
+                      AssetImage(widget.imageurl1),
+                      AssetImage(widget.imageurl2),
+                      AssetImage(widget.imageurl3),
+                    ],
+                    //autoplay: false,
+                    dotSize: 5.0,
+                    dotSpacing: 15.0,
+                    dotColor: Colors.blue[900],
+                    dotBgColor: Colors.grey[100].withOpacity(0.01),
+                    indicatorBgPadding: 10.0,
+                    autoplayDuration: Duration(seconds: 5),
+                    dotIncreasedColor: Colors.cyanAccent,
+                  ),
                 ),
               ),
               Padding(

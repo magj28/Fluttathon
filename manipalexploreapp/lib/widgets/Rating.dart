@@ -42,6 +42,7 @@ class RatingCard extends StatelessWidget {
                             fontSize: 15.0, color: Colors.grey))
                       ],
                     ),
+
                   ],
                 ),
                 Text(experience, style: TextStyle(fontSize: 20, color: Colors.blueGrey),)

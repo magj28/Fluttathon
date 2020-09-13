@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:manipalexploreapp/Screens/RatingKaup.dart';
-import 'package:manipalexploreapp/widgets/SinglePlace.dart';
+import 'package:manipalexploreapp/Screens/SinglePlace.dart';
 
 class KaupBeach extends StatelessWidget {
   @override
